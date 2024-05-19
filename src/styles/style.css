@@ -1,0 +1,131 @@
+
+
+:root {
+    --primary-color-rgb: 30, 30, 30;
+    --secondary-color-rgb: 255, 20, 5;
+    --primary-color: var(--primary-color-rgb);
+    --primary-gradient: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    --secondary-color: rgb(var(--secondary-color-rgb));
+    --secondary-color-filter: invert(35%) sepia(85%) saturate(6663%) hue-rotate(352deg) brightness(98%) contrast(118%);
+    --text-color: #e0e0e0;
+    --scale-ratio: 1.2;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: calc(pow(var(--scale-ratio), 6) * 1rem);
+}
+
+h2 {
+    font-size: calc(pow(var(--scale-ratio), 5) * 1rem);
+}
+
+h3 {
+    font-size: calc(pow(var(--scale-ratio), 4) * 1rem);
+}
+
+h4 {
+    font-size: calc(pow(var(--scale-ratio), 3) * 1rem);
+}
+
+h5 {
+    font-size: calc(pow(var(--scale-ratio), 2) * 1rem);
+}
+
+h6 {
+    font-size: calc(var(--scale-ratio) * 1rem);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+body {
+    min-height: 100vh;
+    height: max-content;
+    background-color: var(--primary-color);
+    background: var(--primary-gradient);
+    font-family: 'Montserrat', cursive;
+    color: var(--text-color);
+}
+
+header {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Free For Palestine', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo::before {
+    content: url(../assets/icons/pizza.svg);
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    margin-right: 2px;
+    filter: var(--secondary-color-filter);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-button {
+    padding: 1.5rem;
+    padding-top: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.nav-button.active,
+.nav-button:hover {
+    color: var(--secondary-color);
+}
+
+.nav-button::before {
+    content: url(../assets/icons/triangle-down.svg);
+    filter: var(--secondary-color-filter);
+    display: block;
+    margin: 0 auto;
+    width: 16px;
+    opacity: 0;
+}
+
+.nav-button.active::before,
+.nav-button:hover::before {
+    opacity: 1;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center ;
+    gap: 1.5rem;
+}
+
+.icon {
+    width: 2rem;
+    filter: contrast(0);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.icon:hover {
+    opacity: .8;
+    background-color: rgba(var(--primary-color-rgb), .25);
+}
+
