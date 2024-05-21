@@ -1,3 +1,4 @@
+import { homeContentGenerator } from './pages/home';
 import searchIcon from './assets/icons/magnify.svg';
 import cartIcon from './assets/icons/cart-outline.svg';
 import './styles/fonts.css';
@@ -18,5 +19,30 @@ window.addEventListener('load', () => {
     cart.className = 'icon cart';
 
     headerIcons.append(search, cart);
+
+    generatePageContent(null, new homeContentGenerator());
 });
+
+const homeButton = document.querySelector('.home-button');
+
+homeButton.addEventListener('click', (event) => generatePageContent(event, new homeContentGenerator()));
+
+const generatePageContent = (event, contentGenerator) => {
+    if (event) {
+        document.querySelector('.nav-button.active')?.classList.remove('active');
+        event.target.classList.add('active');
+    }
+
+    const contentDiv = document.querySelector('#content');
+    contentDiv.textContent = '';
+    contentDiv.append(...contentGenerator.create());
+    contentDiv.className = contentGenerator.pageName;
+
+    const pageContentLoadEvent = new CustomEvent('load', {
+        detail: {
+            pageName: contentGenerator.pageName,
+        },
+    });
+    contentDiv.dispatchEvent(pageContentLoadEvent);
+};
 
