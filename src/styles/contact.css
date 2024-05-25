@@ -1,0 +1,122 @@
+
+
+#content.contact {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 24rem);
+    justify-content: center;
+    justify-items: center;
+    gap: 48px 24px;
+    max-width: 82ch;
+}
+
+.contact-details,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-details {
+    text-wrap: wrap;
+}
+
+.location::before {
+    content: url('./../assets/icons/map-marker.svg');
+}
+
+.opening-time::before {
+    content: url('./../assets/icons/clock-time-three.svg');
+}
+
+.phone-number::before {
+    content: url('./../assets/icons/phone.svg');
+}
+
+.email-address::before {
+    content: url('./../assets/icons/email.svg');
+}
+
+.message-prompt::after {
+    content: url('./../assets/icons/arrow-right.svg');
+}
+
+.contact-details >::before,
+.message-prompt::after {
+    filter: var(--secondary-color-filter);
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    margin: 0 4px;
+}
+
+.message-prompt::after {
+    width: 32px;
+    margin-top: 2px;
+}
+
+.message-prompt {
+    margin: auto 24px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    gap: 1px;
+    margin-left: 24px;
+}
+
+.icon.social-media-icon:hover {
+    opacity: .85;
+    background-color: transparent;
+}
+
+.contact-form {
+    align-items: start;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input-label {
+    font-size: 0.833rem;
+}
+
+.input-field {
+    height: 2rem;
+    padding: 4px;
+    width: 20rem;
+}
+
+.input-field:focus {
+    box-shadow: 2px 2px 16px 0 rgba(255, 0, 0, .5);
+}
+
+textarea.input-field {
+    resize: none;
+    height: 5em;
+    resize: none;
+}
+
+.send-button {
+    padding: 8px 12px;
+    width: fit-content;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    transform: scale(1.05);
+}
+
+.send-button:active {
+    opacity: .85;
+}
