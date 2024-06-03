@@ -1,4 +1,5 @@
 import { homeContentGenerator } from './pages/home';
+import { MenuContentGenerator } from './pages/menu';
 import { contactContentGenerator } from './pages/contact';
 import searchIcon from './assets/icons/magnify.svg';
 import cartIcon from './assets/icons/cart-outline.svg';
@@ -25,9 +26,11 @@ window.addEventListener('load', () => {
 });
 
 const homeButton = document.querySelector('.home-button');
+const menuButton = document.querySelector('.menu-button');
 const contactButton = document.querySelector('.contact-button');
 
 homeButton.addEventListener('click', (event) => generatePageContent(event, new homeContentGenerator()));
+menuButton.addEventListener('click', (event) => generatePageContent(event, new MenuContentGenerator()));
 contactButton.addEventListener('click', (event) => generatePageContent(event, new contactContentGenerator()));
 
 const generatePageContent = (event, contentGenerator) => {

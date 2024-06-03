@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Hummus",
+        "category": "Appetizers",
+        "description": "Mashed chickpeas with tahini, olive oil, lemon, and garlic.",
+        "price": 5,
+        "image": "./hummus.png"
+    },
+    {
+        "name": "Foul (Fava Beans)",
+        "category": "Appetizers",
+        "description": "Stewed fava beans with olive oil, lemon juice, garlic, and spices.",
+        "price": 6,
+        "image": "./foul.png"
+    },
+    {
+        "name": "Mutabbal",
+        "category": "Appetizers",
+        "description": "Roasted eggplant mashed with tahini, lemon, and garlic.",
+        "price": 5,
+        "image": "./mutabbal.png"
+    },
+    {
+        "name": "Stuffed Grape Leaves",
+        "category": "Appetizers",
+        "description": "Grape leaves stuffed with rice and vegetables.",
+        "price": 7,
+        "image": "./stuffed-grape-leaves.png"
+    },
+    {
+        "name": "Falafel",
+        "category": "Appetizers",
+        "description": "Fried chickpea balls.",
+        "price": 4,
+        "image": "./falafel.png"
+    },
+    {
+        "name": "Musakhan",
+        "category": "Main Dishes",
+        "description": "Roasted chicken on taboon bread with caramelized onions, sumac, and pine nuts.",
+        "price": 15,
+        "image": "./musakhan.png"
+    },
+    {
+        "name": "Maqluba",
+        "category": "Main Dishes",
+        "description": "Rice cooked with eggplant, potatoes, and meat or chicken, flipped when served.",
+        "price": 14,
+        "image": "./maqluba.png"
+    },
+    {
+        "name": "Mujadara",
+        "category": "Main Dishes",
+        "description": "Rice cooked with lentils and caramelized onions.",
+        "price": 10,
+        "image": "./mujadara.png"
+    },
+    {
+        "name": "Qidra",
+        "category": "Main Dishes",
+        "description": "Meat cooked with rice and special spices.",
+        "price": 16,
+        "image": "./qidra.png"
+    },
+    {
+        "name": "Mansaf",
+        "category": "Main Dishes",
+        "description": "Meat cooked with dried yogurt (jameed) and rice.",
+        "price": 18,
+        "image": "./mansaf.png"
+    },
+    {
+        "name": "Kunafa",
+        "category": "Desserts",
+        "description": "Dessert made from shredded phyllo dough filled with cheese or cream.",
+        "price": 7,
+        "image": "./kunafa.png"
+    },
+    {
+        "name": "Maamoul",
+        "category": "Desserts",
+        "description": "Cookies filled with dates or nuts.",
+        "price": 5,
+        "image": "./maamoul.png"
+    },
+    {
+        "name": "Awwameh (Loukoumades)",
+        "category": "Desserts",
+        "description": "Fried dough balls dipped in syrup.",
+        "price": 4,
+        "image": "./awwameh.png"
+    },
+    {
+        "name": "Qatayef",
+        "category": "Desserts",
+        "description": "Pastries filled with cream or nuts, fried and covered with syrup.",
+        "price": 6,
+        "image": "./qatayef.png"
+    },
+    {
+        "name": "Mint Tea",
+        "category": "Drinks",
+        "description": "Green tea with mint leaves.",
+        "price": 2,
+        "image": "./mint-tea.png"
+    },
+    {
+        "name": "Arabic Coffee",
+        "category": "Drinks",
+        "description": "Coffee ground with cardamom.",
+        "price": 3,
+        "image": "./arabic-coffee.png"
+    },
+    {
+        "name": "Tamarind Juice",
+        "category": "Drinks",
+        "description": "Cold and refreshing drink.",
+        "price": 4,
+        "image": "./tamarind-juice.png"
+    },
+    {
+        "name": "Lemon Mint Juice",
+        "category": "Drinks",
+        "description": "Lemon and mint mixed with sugar and water.",
+        "price": 3,
+        "image": "./lemon-mint-juice.png"
+    },
+    {
+        "name": "Falafel Sandwich",
+        "category": "Sandwiches",
+        "description": "Pita bread filled with falafel, salad, and tahini sauce.",
+        "price": 5,
+        "image": "./falafel-sandwich.png"
+    },
+    {
+        "name": "Shawarma Sandwich",
+        "category": "Sandwiches",
+        "description": "Pita bread filled with thinly sliced chicken or beef, vegetables, and tahini sauce.",
+        "price": 7,
+        "image": "./shawarma-sandwich.png"
+    },
+    {
+        "name": "Tabbouleh",
+        "category": "Salads",
+        "description": "Chopped parsley, tomatoes, onions, mint, bulgur, and olive oil, seasoned with lemon juice.",
+        "price": 6,
+        "image": "./tabbouleh.png"
+    },
+    {
+        "name": "Fattoush",
+        "category": "Salads",
+        "description": "Mixed salad with crispy bread, tomatoes, cucumbers, radishes, and sumac, dressed with olive oil and lemon juice.",
+        "price": 6,
+        "image": "./fattoush.png"
+    },
+    {
+        "name": "Arabic Salad",
+        "category": "Salads",
+        "description": "Simple salad with tomatoes, cucumbers, onions, parsley, and lemon dressing.",
+        "price": 5,
+        "image": "./arabic-salad.png"
+    }
+]
