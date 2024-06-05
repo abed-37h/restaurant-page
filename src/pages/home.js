@@ -35,7 +35,7 @@ const createHeroArea = () => {
         return heroArea;
 };
 
-export class homeContentGenerator {
+export class HomeContentGenerator {
     constructor() {
         this.pageName = 'home';
     }

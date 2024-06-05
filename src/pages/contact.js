@@ -105,7 +105,7 @@ const createForm = () => {
     return contactForm;
 };
 
-export class contactContentGenerator {
+export class ContactContentGenerator {
     constructor() {
         this.pageName = 'contact';
     }
